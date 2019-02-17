@@ -1,0 +1,155 @@
+.sticky {
+	display: block;
+}
+
+.byline,
+.updated:not(.published){
+	display: none;
+}
+
+.single .byline,
+.group-blog .byline {
+	display: inline;
+}
+
+.post {
+	margin-bottom: 4em;
+	padding-bottom: 1em;
+}
+
+.post-thumbnail {
+	margin-bottom: 1em;
+}
+
+.entry-meta,
+.entry-footer {
+  font-size: .75rem;
+  margin: .75em 0 2em;
+
+  .svg-inline--fa {
+    color: $gray-600;
+    margin-right: .3em;
+  }
+  span {
+    margin: 0 1.5em .4em 0;
+    display: inline-block;
+
+    &:last-child {
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      color: $gray-600;
+
+      &:hover {
+        color: $gray-900;
+      }
+    }
+  }
+	.edit-link {
+		.btn {
+      		color: $white;
+
+      	&:hover {
+	        color: $white
+	    }
+	}
+  }
+}
+
+/* Posts Navigation */
+.nav-links {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Screenreaders */
+.screen-reader-text {
+	@include sr-only;
+}
+
+/* 404 page */
+.error404 {
+	.content-area {
+		@include make-col-ready();
+		@include make-col(12);	
+	}
+}
+
+body {
+  font-family: Abel;
+}
+
+/* HOME PAGE STYLES */
+
+.home-banner{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  background-position: center top;
+  background-repeat: no-repeat;
+  padding: 0px;
+  margin-top:0px;
+  height: 650px;
+}
+
+.siteLogo{
+    background-image: url('images/avellar-logo.jpg');
+    background-size: 125px 134px;
+    background-repeat: no-repeat;
+    width:100%;
+    height: 134px;
+}
+.topLine{
+    position: relative;
+    height: 110px;
+    width: 100%;
+}
+.topLine::before {
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  border-top: 1px solid #ffffff;
+  width: 100%;
+  height: 5px;
+}
+.introText{
+  margin-top: 20px;
+  font-size: 60px;
+  line-height: 1.2;
+}
+.siteNumber {
+  position: absolute;
+  text-align: right;
+  top: 610px;
+  left: 10px;
+  width: 500px;
+  padding: 25px;
+  background-color: $blue;
+  opacity: 0.8;
+  z-index: 1500;
+  color: #ffffff;
+  font-size: 20px;
+
+  transform: rotate(-90deg); /* Standard syntax */
+  transform-origin: top left;
+
+}
+
+/* SERVICE BLOCKS */
+
+.serviceContainer {
+  position:relative;
+  width:100%;
+  height: 410px;
+  margin-top:0rem;
+
+}
+.serviceBlock{
+  width: 100%;
+  height: 550px;
+  padding: 1rem; 
+  margin-top: 10px;
+}
+
