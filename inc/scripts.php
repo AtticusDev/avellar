@@ -10,6 +10,14 @@ function avellar_scripts() {
 
 	wp_enqueue_script( 'avellar-js', get_template_directory_uri() . '/js/dist/scripts.min.js', array('jquery'), ' ', true );
 
+	wp_enqueue_script( 'gsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js', array(), false, true );
+
+	wp_enqueue_script( 'scrollMagic-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/ScrollMagic.min.js', array(), false, true );
+
+	wp_enqueue_script( 'scrollMagicIndicators-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.6/plugins/debug.addIndicators.min.js', array(), false, true );
+
+	wp_enqueue_script( 'ScrollMagicGsap-js', 'https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js', array(), false, true );
+
 	wp_enqueue_script( 'avellar-fa', '//use.fontawesome.com/releases/v5.0.1/js/all.js', array(), '5.0.1' );
 
 	wp_enqueue_script( 'slide-menu', get_template_directory_uri() . '/js/dist/slide-menu.js', array('jquery'), ' ', true );

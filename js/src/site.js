@@ -39,4 +39,33 @@ jQuery(document).ready(function($){
 
             });
 
+/*
+          var serviceImage1 = $('.box1');
+          $(serviceImage1).mouseover(function(){
+            TweenMax.to(serviceImage1, 1.5, {scale:1.15});
+
+          });
+          $(serviceImage1).mouseout(function(){
+            TweenMax.to(serviceImage1, 1, {scale: 1});
+          });
+
+          var serviceImage2 = $('.box2');
+          $(serviceImage2).mouseover(function(){
+            TweenMax.to(serviceImage2, 1.5, {scale:1.15});
+          });
+          $(serviceImage2).mouseout(function(){
+            TweenMax.to(serviceImage2, 1, {scale: 1});
+          });
+
+          var serviceImage3 = $('.box3');
+          $(serviceImage3).mouseover(function(){
+            TweenMax.to(serviceImage3, 1.5, {scale:1.15});
+          });
+          $(serviceImage3).mouseout(function(){
+            TweenMax.to(serviceImage3, 1, {scale: 1});
+          });
+*/
+
+
+
 });

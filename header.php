@@ -22,28 +22,35 @@
 <body <?php body_class(); ?>>
 
 
-	<div class="controls">
-			<button class="hamburger hamburger--collapse slide-menu-control openbtn" type="button" data-target="test-menu-left" data-action="toggle">
-			  <span class="hamburger-box">
-			    <span class="hamburger-inner"></span>
-			  </span>
-			</button>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-4">
+			<div class="controls">
+					<button class="hamburger hamburger--collapse slide-menu-control openbtn" type="button" data-target="test-menu-left" data-action="toggle">
+					  <span class="hamburger-box">
+					    <span class="hamburger-inner"></span>
+					  </span>
+					</button>
+				    <nav class="slide-menu" id="test-menu-left">
+						<?php
+								        $args = array(
+							              'theme_location' => 'primary',
+							              'depth'      => 3,
+							              'container'  => false,
+							              'menu_class'     => 'navbar-nav',
+						/*	              'walker'     => new Bootstrap_Walker_Nav_Menu()*/
+							              );
+							            if (has_nav_menu('primary')) {
+							              wp_nav_menu($args);
+							            }
+						?>
+
+					</nav>
+			</div>
+			<div class="siteLogo"></div>
+		</div>
 	</div>
-	<div class="siteNumber">020 8656 0400</div>
+</div>
+<div class="siteNumber">020 8656 0400</div>
 
-    <nav class="slide-menu" id="test-menu-left">
-		<?php
-				        $args = array(
-			              'theme_location' => 'primary',
-			              'depth'      => 3,
-			              'container'  => false,
-			              'menu_class'     => 'navbar-nav',
-		/*	              'walker'     => new Bootstrap_Walker_Nav_Menu()*/
-			              );
-			            if (has_nav_menu('primary')) {
-			              wp_nav_menu($args);
-			            }
-		?>
-
-	</nav>
 

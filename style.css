@@ -7062,69 +7062,98 @@ body {
 /* HOME PAGE STYLES */
 .home-banner {
   position: relative;
-  top: 0px;
+  top: -111px;
   left: 0px;
   background-position: center top;
   background-repeat: no-repeat;
-  padding: 0px;
   margin-top: 0px;
-  height: 650px; }
-
-.siteLogo {
-  background-image: url("images/avellar-logo.jpg");
-  background-size: 125px 134px;
-  background-repeat: no-repeat;
-  width: 100%;
-  height: 134px; }
-
-.topLine {
-  position: relative;
-  height: 110px;
-  width: 100%; }
-
-.topLine::before {
-  position: absolute;
-  content: '';
-  bottom: 0px;
-  border-top: 1px solid #ffffff;
-  width: 100%;
-  height: 5px; }
+  height: 750px; }
 
 .introText {
-  margin-top: 20px;
+  border-top: 1px solid #fff;
+  margin-top: 240px;
+  padding-top: 4rem;
   font-size: 60px;
-  line-height: 1.2; }
-
-.siteNumber {
-  position: absolute;
-  text-align: right;
-  top: 610px;
-  left: 10px;
-  width: 500px;
-  padding: 25px;
-  background-color: #1b75bc;
-  opacity: 0.8;
-  z-index: 1500;
-  color: #ffffff;
-  font-size: 20px;
-  -webkit-transform: rotate(-90deg);
-          transform: rotate(-90deg);
-  /* Standard syntax */
-  -webkit-transform-origin: top left;
-          transform-origin: top left; }
+  line-height: 1.2;
+  padding-right: 10rem; }
 
 /* SERVICE BLOCKS */
-.serviceContainer {
-  position: relative;
-  width: 100%;
-  height: 410px;
-  margin-top: 0rem; }
+#serviceWrapper {
+  padding: 5rem;
+  overflow: hidden;
+  -webkit-transform: translateY(-160px);
+          transform: translateY(-160px); }
 
 .serviceBlock {
-  width: 100%;
-  height: 550px;
-  padding: 1rem;
-  margin-top: 10px; }
+  height: 450px;
+  overflow: hidden;
+  padding: 0px; }
+
+.box1, .box2, .box3 {
+  overflow: hidden;
+  position: relative;
+  padding: 0px; }
+
+.serviceImage {
+  height: 450px;
+  overflow: hidden;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.serviceContentWrapper {
+  position: absolute;
+  padding: 0 px;
+  height: auto;
+  top: 160px;
+  left: 0; }
+
+.titleBG {
+  background: rgba(0, 0, 0, 0.6);
+  width: auto;
+  height: 40px;
+  color: #ffffff;
+  padding-top: 3px; }
+  .titleBG h3 {
+    padding: 0;
+    margin-bottom: 4px; }
+  .titleBG a {
+    color: #fff;
+    text-decoration: none; }
+  .titleBG a:hover {
+    color: #fff;
+    text-decoration: none; }
+
+.descBlock {
+  opacity: 0;
+  height: 0px;
+  color: #fff;
+  padding: 2.5rem;
+  -webkit-transition: all 0.25s ease-out;
+          transition: all 0.25s ease-out; }
+
+.descBlock p {
+  opacity: 0;
+  color: #fff;
+  -webkit-transition: opacity 0.25s ease-out 0.25s;
+          transition: opacity 0.25s ease-out 0.25s; }
+
+.descBlock button {
+  opacity: 0;
+  border: none;
+  background-color: #f2f2f2;
+  -webkit-transition: opacity 0.5s ease-out 0.5s;
+          transition: opacity 0.5s ease-out 0.5s; }
+
+.serviceBlock:hover .descBlock {
+  opacity: 1;
+  height: 250px;
+  background-color: #ccc;
+  -webkit-transition: all 0.5s ease-out;
+          transition: all 0.5s ease-out; }
+  .serviceBlock:hover .descBlock p {
+    opacity: 1; }
+  .serviceBlock:hover .descBlock button {
+    opacity: 1; }
 
 /*--------------------------------------------------------------
 ## Widgets
@@ -7176,7 +7205,7 @@ body {
   -webkit-transform: translateX(100%);
   transform: translateX(100%);
   will-change: transform;
-  z-index: 1800; }
+  z-index: -1; }
 
 .slide-menu .slider {
   position: absolute;
@@ -7250,7 +7279,7 @@ body {
 
 .controls {
   position: fixed;
-  top: 0px;
+  top: 10px;
   left: 10px;
   z-index: 2000;
   background-color: #1b75bc; }
@@ -7258,13 +7287,67 @@ body {
 .admin-bar .controls {
   top: 32px; }
 
+.siteLogo {
+  position: absolute;
+  background-image: url("images/avellar-logo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 134px;
+  height: 144px;
+  top: 10px;
+  left: 100px;
+  z-index: 500; }
+
+.topLine {
+  position: relative;
+  height: 110px;
+  width: 100%; }
+
+.topLine::before {
+  position: absolute;
+  content: '';
+  bottom: 0px;
+  border-top: 1px solid #ffffff;
+  width: 100%;
+  height: 5px; }
+
+.siteNumber {
+  position: absolute;
+  text-align: right;
+  top: 595px;
+  left: 10px;
+  width: 500px;
+  padding: 25px;
+  background-color: #1b75bc;
+  opacity: 0.8;
+  z-index: 1500;
+  color: #ffffff;
+  font-size: 20px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  /* Standard syntax */
+  -webkit-transform-origin: top left;
+          transform-origin: top left; }
+
 /*--------------------------------------------------------------
 ## Footer
 --------------------------------------------------------------*/
 .site-footer {
-  padding: 4rem 0;
-  margin-top: 4rem;
-  background-color: #f8f9fa; }
+  padding: 0rem 0;
+  margin-top: 4rem; }
+
+.footerLogo {
+  background-image: url("images/avellar-logo.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 95px;
+  height: 102px;
+  margin: 0 auto; }
+
+.site-info {
+  text-align: center;
+  margin-top: 3rem; }
 
 .site-content {
   word-break: break-word; }
