@@ -9,14 +9,20 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container-fluid home-banner" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-size: cover;">
+	<div class="container-fluid about-header">
 
 		<div class="row justify-content-center">
-			<div class="col-md-4 col-lg-6 col-xl-6">
-
-				<?php
-					the_content();
-				?>
+			<div class="col-md-4 col-lg-6 col-xl-6 about-panel">
+				<div class="trigger-badge">
+					<h1>
+					<?php
+						the_title();
+					?>
+					</h1>
+					<?php
+						the_content();
+					?>
+				</div>
 			</div>
 		</div>
 	</div>

@@ -13,12 +13,39 @@
 
 		<div class="row justify-content-end">
 			<div class="col-md-8 col-lg-9 col-xl-10 introText">
+				<div class="trigger-badge">
 				<?php
 					the_content();
+				?>
+				</div>
+			</div>
+		</div>
+		<div class="container">
+			<div class="row justify-content-end">
+				<div class="col-md-2 formTitle">
+					<h3 style="margin-bottom: 0px;">Request a booking</h3>
+				</div>
+				<div class="col-md-10">
+					<div class="form-wrapper">
+						<?php
+							echo do_shortcode('[gravityform id=1 name=Contact title=false description=false]');
+						?>
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid" style="margin-top: -50px;">
+		<div class="row justify-content-center">
+			<div class="col-md-8">
+				<?php
+					the_field('introduction');
 				?>
 			</div>
 		</div>
 	</div>
+
 	<div class="container-fluid">
 		<div class="row">
 			<div class="container" id="serviceWrapper">
@@ -43,7 +70,6 @@
 											<div class="titleBG"><h3 class="text-white"><?php echo $title ?></h3>
 												<div class="descBlock">
 													<p><?php echo $description; ?></p>
-													<button href="<?php echo $link; ?>">Read More</button>
 												</div>
 											</div>
 										</div>
@@ -56,7 +82,16 @@
 
 				<?php endwhile;
 				endif; ?>
+			</div>
+		</div>
 
+		</div>
+	</div>
+	<div class="bcg-parallax">
+		<?php $officeImg = get_field('facility_image'); ?>
+		<div class="bcg" style="background-image: url('<?php echo $officeImg; ?>')"></div>
+		<div class="content-wrapper">
+			<div class="caseStudyIntro"><h1>Our facilities</h1></div>
 		</div>
 	</div>
 

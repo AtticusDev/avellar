@@ -1,10 +1,11 @@
 .site-footer {
 	padding: 0rem 0;
-    margin-top: 4rem;
+    margin-top: 0rem;
 //    background-color: $gray-100;
 }
 
 .footerLogo{
+    position:relative;
     background-image: url('images/avellar-logo.jpg');
     background-size: cover;
     background-position: center center;
@@ -12,9 +13,11 @@
     width: 95px;
     height: 102px;
     margin: 0 auto;
+    transform: translateY(-86px);
+    z-index: 2;
 }
 
 .site-info {
 	text-align: center;
-	margin-top: 3rem;	
+	margin-bottom: 6rem;	
 }

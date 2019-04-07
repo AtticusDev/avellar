@@ -39,6 +39,40 @@ jQuery(document).ready(function($){
 
             });
 
+
+  // Init ScrollMagic
+  var controller = new ScrollMagic.Controller();
+
+  var slideParallaxScene = new ScrollMagic.Scene({
+    triggerElement: '.bcg-parallax',
+    triggerHook: 1,
+    duration: '200%'
+  })
+  .setTween(TweenMax.from('.bcg', 1, {y:'-50%', ease:Power0.easeNone}))
+//  .addIndicators()
+  .addTo(controller);
+
+
+   var avellarBadgeScene = new ScrollMagic.Scene({
+        triggerElement: '.trigger-badge',
+        triggerHook: 0.1,
+        revers: true
+    })
+    .setClassToggle('.logoBadge', 'in-view') // add class to fade-in
+//    .addIndicators()
+    .addTo(controller);
+
+   var avellarNumberScene = new ScrollMagic.Scene({
+        triggerElement: '.trigger-badge',
+        triggerHook: 0.1,
+        reverse: true
+    })
+    .setClassToggle('.siteNumberWrapper', 'in-view') // add class to fade-in
+    .addIndicators()
+    .addTo(controller);
+
+
+
 /*
           var serviceImage1 = $('.box1');
           $(serviceImage1).mouseover(function(){
