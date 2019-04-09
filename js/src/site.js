@@ -43,6 +43,25 @@ jQuery(document).ready(function($){
   // Init ScrollMagic
   var controller = new ScrollMagic.Controller();
 
+  var homeParallaxScene = new ScrollMagic.Scene({
+    triggerElement: '.homeImg-parallax',
+    triggerHook: 1,
+    duration: '200%'
+  })
+  .setTween(TweenMax.to('.homeImg', 1, {y:'35%', ease:Power0.easeNone}))
+//  .addIndicators()
+  .addTo(controller);
+
+  var homefadeParallaxScene = new ScrollMagic.Scene({
+    triggerElement: '.homeImg-parallax',
+    triggerHook: 1,
+    duration: '200%'
+  })
+  .setTween(TweenMax.fromTo('.homeImg', 1, {autoAlpha: 3}, {autoAlpha: 0.5} ))
+//  .addIndicators()
+  .addTo(controller);
+
+
   var slideParallaxScene = new ScrollMagic.Scene({
     triggerElement: '.bcg-parallax',
     triggerHook: 1,
@@ -68,8 +87,20 @@ jQuery(document).ready(function($){
         reverse: true
     })
     .setClassToggle('.siteNumberWrapper', 'in-view') // add class to fade-in
-    .addIndicators()
+//    .addIndicators()
     .addTo(controller);
+
+
+/* SERVICE ROLLOVERS */
+
+ $(".nav-item").mouseover('.nav-link',function(e){
+    $(".nav-item").removeClass("rollactive");
+    $(this).addClass("rollactive");
+  });
+ $(".nav-item").mouseout('.nav-link',function(e){
+    $(".nav-item").removeClass("rollactive");
+  });
+
 
 
 

@@ -9,34 +9,37 @@
 
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container-fluid home-banner" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-size: cover;">
-
-		<div class="row justify-content-end">
-			<div class="col-md-8 col-lg-9 col-xl-10 introText">
-				<div class="trigger-badge">
-				<?php
-					the_content();
-				?>
-				</div>
-			</div>
+	<div class="homeImg-parallax">
+		<div class="container-fluid home-banner homeImg" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-size: cover;">
 		</div>
-		<div class="container">
+		<div class="home-content-wrapper">
 			<div class="row justify-content-end">
-				<div class="col-md-2 formTitle">
-					<h3 style="margin-bottom: 0px;">Request a booking</h3>
-				</div>
-				<div class="col-md-10">
-					<div class="form-wrapper">
-						<?php
-							echo do_shortcode('[gravityform id=1 name=Contact title=false description=false]');
-						?>
+				<div class="col-md-8 col-lg-9 col-xl-10 introText">
+					<div class="trigger-badge">
+					<?php
+						the_content();
+					?>
 					</div>
-
 				</div>
 			</div>
-		</div>
-	</div>
-	<div class="container-fluid" style="margin-top: -50px;">
+			<div class="container">
+				<div class="row justify-content-end">
+					<div class="col-md-2 formTitle">
+						<h3 style="margin-bottom: 0px;">Request a booking</h3>
+					</div>
+					<div class="col-md-10">
+						<div class="form-wrapper">
+							<?php
+								echo do_shortcode('[gravityform id=1 name=Contact title=false description=false]');
+							?>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div> <!-- end content wrapper -->
+	</div> <!-- end parallax -->
+	<div class="container-fluid mt-5">
 		<div class="row justify-content-center">
 			<div class="col-md-8">
 				<?php
