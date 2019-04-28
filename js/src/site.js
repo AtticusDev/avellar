@@ -43,12 +43,13 @@ jQuery(document).ready(function($){
   // Init ScrollMagic
   var controller = new ScrollMagic.Controller();
 
+
   var homeParallaxScene = new ScrollMagic.Scene({
     triggerElement: '.homeImg-parallax',
     triggerHook: 1,
     duration: '200%'
   })
-  .setTween(TweenMax.to('.homeImg', 1, {y:'35%', ease:Power0.easeNone}))
+  .setTween(TweenMax.to('.homeImg', 1, {y:'30%', ease:Power0.easeNone}))
 //  .addIndicators()
   .addTo(controller);
 
@@ -57,7 +58,15 @@ jQuery(document).ready(function($){
     triggerHook: 1,
     duration: '200%'
   })
-  .setTween(TweenMax.fromTo('.homeImg', 1, {autoAlpha: 3}, {autoAlpha: 0.5} ))
+  .setTween(TweenMax.fromTo('.homeImg', 1, {autoAlpha: 3}, {autoAlpha: 0.75} ))
+//  .addIndicators()
+  .addTo(controller);
+
+  var homeServiceScene = new ScrollMagic.Scene({
+    triggerElement: '#serviceWrapper',
+    triggerHook: 0.8
+  })
+  .setClassToggle('.serviceBlock', 'fade-in')
 //  .addIndicators()
   .addTo(controller);
 
@@ -90,6 +99,24 @@ jQuery(document).ready(function($){
 //    .addIndicators()
     .addTo(controller);
 
+  var serviceNavScene = new ScrollMagic.Scene({
+    triggerElement: '.service-wrapper',
+    triggerHook: 0
+  })
+  .setClassToggle('.service-nav-container', 'fixed')
+//  .addIndicators()
+  .addTo(controller);
+
+  var medBlockScene = new ScrollMagic.Scene({
+    triggerElement: '.service-wrapper',
+    triggerHook: 0
+  })
+  .setClassToggle('.med-block', 'fixed-menu')
+//  .addIndicators()
+  .addTo(controller);
+
+
+
 
 /* SERVICE ROLLOVERS */
 
@@ -101,9 +128,35 @@ jQuery(document).ready(function($){
     $(".nav-item").removeClass("rollactive");
   });
 
+  $('.nav-item').click(function(e) {
+    var txt = $(e.target).text();
+    console.log(txt);
+  });
 
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
 
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
 
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+  
 /*
           var serviceImage1 = $('.box1');
           $(serviceImage1).mouseover(function(){

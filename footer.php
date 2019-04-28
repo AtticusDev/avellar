@@ -15,17 +15,7 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 
-<!--
 		<div class="container-fluid">
-			<div class="row justify-content-center">
-				<div class="col-sm-12 col-md-4">
-					<div class="footerLogo">
-					</div>
-				</div>
-			</div>
-		</div>
--->
-		<div class="container-fluid" style="background-color: #ccc;">
 			<div class="row justify-content-center">
 				<div class="col-sm-12 col-md-4">
 					<div class="footerLogo">

@@ -49,6 +49,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
   --gray: #868e96;
   --gray-dark: #343a40;
   --darkgray: #414142;
+  --lightgray: #e5e5e5;
   --blue: #6d8fa7;
   --lightblue: #f4f7fa;
   --indigo: #6610f2;
@@ -7060,11 +7061,17 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: Abel; }
 
+h1 {
+  font-size: 2.2rem; }
+
+h2 {
+  font-size: 1.9rem; }
+
 h3 {
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
 
 h4 {
-  font-size: 1 rem;
+  font-size: 1.2rem;
   color: #6d8fa7; }
 
 .underline::after {
@@ -7087,13 +7094,23 @@ h4 {
   top: 20px;
   border-bottom: 1px solid #000; }
 
+.book-button {
+  background-color: #6d8fa7;
+  color: #fff;
+  border-radius: 0; }
+
+.book-button:hover {
+  background-color: #416179;
+  color: #fff; }
+
 /* HOME PAGE STYLES */
 /* TOP LOGO NUMBER AND SOCIAL */
 .siteLogo {
   position: absolute;
-  background-image: url("images/avellar-logo.jpg");
+  background-image: url("images/avellar-logo-ol.svg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: #fff;
   width: 134px;
   height: 144px;
   top: 10px;
@@ -7119,7 +7136,7 @@ h4 {
   left: 10px;
   width: 80px;
   height: 400px;
-  padding: 140px 22px 15px;
+  padding: 200px 22px 15px;
   background-color: #6d8fa7;
   opacity: 0.85;
   z-index: 1500;
@@ -7140,6 +7157,10 @@ h4 {
           transform-origin: top left;
   width: 200px;
   text-align: left; }
+  .siteNumber a {
+    color: #fff; }
+  .siteNumber a:hover {
+    text-decoration: none; }
 
 .logoBadge {
   position: fixed;
@@ -7158,7 +7179,7 @@ h4 {
   top: 140px; }
 
 .sm-block {
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: 0.5rem; }
 
 .c-icon {
@@ -7171,7 +7192,7 @@ h4 {
 .c-link {
   position: relative;
   text-align: center;
-  color: #d1d1d1; }
+  color: #f4f7fa; }
 
 .home-banner {
   position: relative;
@@ -7208,23 +7229,32 @@ h4 {
 
 .introText {
   border-top: 1px solid #fff;
-  margin-top: 128px;
-  padding-top: 4rem;
-  font-size: 60px;
+  margin-top: 117px;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+  font-size: 40px;
   line-height: 1.2;
   padding-right: 10rem; }
 
 /* SERVICE BLOCKS */
 #serviceWrapper {
   padding: 5rem;
-  overflow: hidden;
-  -webkit-transform: translateY(0px);
-          transform: translateY(0px); }
+  overflow: hidden; }
 
 .serviceBlock {
   height: 450px;
   overflow: hidden;
-  padding: 0px; }
+  padding: 0px;
+  opacity: 0;
+  -webkit-transform: translateY(150px);
+          transform: translateY(150px);
+  -webkit-transition: all 1s ease-out;
+          transition: all 1s ease-out; }
+
+.serviceBlock.fade-in {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px); }
 
 .box1, .box2, .box3 {
   overflow: hidden;
@@ -7325,8 +7355,18 @@ h4 {
 
 /* SERVICE PAGES */
 .service-nav-container {
-  height: 100px;
-  margin-top: 50px; }
+  height: 60px;
+  margin-top: 0px;
+  padding-top: 0.6rem;
+  background-color: #414142;
+  opacity: 0.9;
+  -webkit-transition: all 0.25s ease-out;
+          transition: all 0.25s ease-out; }
+
+.service-nav-container.fixed {
+  position: fixed;
+  top: 0rem;
+  z-index: 10; }
 
 .serviceNav {
   list-style: none;
@@ -7342,17 +7382,23 @@ h4 {
 .nav-link {
   padding: 0px; }
 
+#service-menu {
+  position: relative;
+  -webkit-transition: all 0.35s ease-out;
+          transition: all 0.35s ease-out; }
+
 #service-menu .nav-link {
   position: relative;
   display: block;
   text-align: left;
-  color: #6d8fa7;
+  color: #fff;
+  font-size: 1.1rem;
   -webkit-transition: color 0.5s;
           transition: color 0.5s;
   font-weight: 400; }
 
 #service-menu .nav-link:hover {
-  color: #000; }
+  color: #6d8fa7; }
 
 #service-menu .active .nav-link {
   color: #000; }
@@ -7392,12 +7438,51 @@ h4 {
   background-color: #f4f7fa;
   height: auto; }
 
+.service-white {
+  background-color: #fff;
+  height: auto; }
+
 .medical-panel {
-  padding: 4rem 0; }
+  padding: 4rem 15px; }
+
+.med-block {
+  margin-top: 3rem; }
+
+.med-block.fixed-menu {
+  -webkit-transform: translateY(60px);
+          transform: translateY(60px); }
+
+.download-wrapper {
+  position: relative;
+  width: 200px; }
+
+.download-item {
+  position: relative;
+  height: 45px; }
+
+.download-link {
+  padding-left: 40px;
+  padding-top: 3px; }
+
+.download-link::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background-image: url("images/adobe-pdf-icon.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px; }
+
+/* CONTACT PANELS */
+.contact-panel {
+  background-color: #f4f7fa;
+  padding: 5rem 0; }
 
 /* BOOKING FORM */
 .booking-wrapper {
-  margin-top: 8rem; }
+  margin-top: 3rem; }
 
 .form-wrapper {
   background-color: #6d8fa7;
@@ -7582,24 +7667,29 @@ h4 {
 --------------------------------------------------------------*/
 .site-footer {
   padding: 0rem 0;
-  margin-top: 0rem; }
+  margin-top: 6rem;
+  background-color: #e5e5e5; }
 
 .footerLogo {
   position: relative;
-  background-image: url("images/avellar-logo.jpg");
+  background-image: url("images/avellar-logo-ol.svg");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
-  width: 95px;
+  background-color: #ffffff;
+  width: 100px;
   height: 102px;
   margin: 0 auto;
-  -webkit-transform: translateY(-86px);
-          transform: translateY(-86px);
+  -webkit-transform: translateY(-72px);
+          transform: translateY(-72px);
   z-index: 2; }
 
 .site-info {
   text-align: center;
   margin-bottom: 6rem; }
+
+.footer-space {
+  height: 8rem; }
 
 .site-content {
   word-break: break-word; }

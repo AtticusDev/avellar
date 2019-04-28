@@ -39,6 +39,8 @@
 			</div>
 		</div> <!-- end content wrapper -->
 	</div> <!-- end parallax -->
+
+
 	<div class="container-fluid mt-5">
 		<div class="row justify-content-center">
 			<div class="col-md-8">

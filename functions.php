@@ -45,6 +45,8 @@ function avellar_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => esc_html__( 'Primary', 'avellar' ),
+		'aviation' => esc_html__( 'Aviation' ),
+		'specialist' => esc_html__( 'Specialist' ),
 	) );
 
 	/*
@@ -113,3 +115,16 @@ require get_template_directory() . '/inc/customizer.php';
  * Bootstrap Walker.
  */
 require get_template_directory() . '/inc/bootstrap-walker.php';
+
+
+/**
+ * Custom post types.
+ */
+require get_template_directory() . '/inc/post-types/CPT.php';
+
+//Medical custom post type
+require get_template_directory() . '/inc/post-types/register-medicals.php';
+
+//Download custom post type
+require get_template_directory() . '/inc/post-types/register-downloads.php';
+

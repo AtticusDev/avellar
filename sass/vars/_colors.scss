@@ -29,7 +29,7 @@ $blue:    #6d8fa7 !default;
 $lightblue: #f4f7fa !default;
 $darkblue: #416179 !default;
 $darkgray:#414142 !default;
-$lightgray:#a0a09f !default;
+$lightgray:#e5e5e5 !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
@@ -43,6 +43,7 @@ $cyan:    #17a2b8 !default;
 
  $colors: (
    darkgray: $darkgray,
+   lightgray: $lightgray,
    blue: $blue,
    lightblue: $lightblue,
    indigo: $indigo,

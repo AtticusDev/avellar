@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 92.3 87.1" style="enable-background:new 0 0 92.3 87.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:url(#SVGID_1_);}
+	.st1{fill:url(#SVGID_2_);}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'Abel-Regular';}
+	.st4{font-size:18.6921px;}
+	.st5{opacity:0.13;fill:url(#SVGID_3_);}
+</style>
+<g>
+	<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="4.4643" y1="86.1016" x2="109.0981" y2="61.8837">
+		<stop  offset="0" style="stop-color:#1D71B8"/>
+		<stop  offset="1" style="stop-color:#36A9E1"/>
+	</linearGradient>
+	<rect y="65.8" class="st0" width="92.3" height="21.3"/>
+	<linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="-5.2422" y1="-3.8997" x2="91.7847" y2="65.1834">
+		<stop  offset="0.278" style="stop-color:#000000"/>
+		<stop  offset="1" style="stop-color:#575756"/>
+	</linearGradient>
+	<rect class="st1" width="92.3" height="65.4"/>
+	<text transform="matrix(1 0 0 1 7.8772 43.8699)" class="st2 st3 st4">Avellar</text>
+	<linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="65.0629" y1="65.6231" x2="76.417" y2="65.6231">
+		<stop  offset="0.2262" style="stop-color:#000000;stop-opacity:0"/>
+		<stop  offset="0.761" style="stop-color:#FFFFFF"/>
+	</linearGradient>
+	<path class="st5" d="M75.3,63L75.3,63l-8.2-8.3l-2,2l6.2,6.2l0,0c0.7,0.7,1.1,1.6,1.1,2.6c0,1.1-0.5,2-1.2,2.7l-6.1,6.1l2,2
+		l8.1-8.1c0.7-0.7,1.2-1.6,1.2-2.7C76.4,64.6,76,63.7,75.3,63z"/>
+	<path class="st2" d="M73.9,64.2c0.8,0,1.4,0.6,1.4,1.4S74.7,67,73.9,67l0,0l0.1,0l-27.8-1.5L73.9,64.2L73.9,64.2L73.9,64.2z"/>
+</g>
+</svg>

@@ -81,14 +81,22 @@ body {
   font-family: Abel;
 }
 
+h1 {
+  font-size: 2.2rem;
+}
+h2 {
+  font-size: 1.9rem;
+}
 
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.3rem;
 }
+
 h4 {
-  font-size: 1 rem;
+  font-size: 1.2rem;
   color: $blue;
 }
+
 .underline::after{
   content: '';
   display: block;
@@ -110,6 +118,15 @@ h4 {
   border-bottom: 1px solid #000;
 }
 
+.book-button {
+  background-color: $blue;
+  color: #fff;
+  border-radius: 0;
+}
+.book-button:hover {
+  background-color: $darkblue;
+  color: #fff;
+}
 
 /* HOME PAGE STYLES */
 
@@ -118,9 +135,10 @@ h4 {
 
 .siteLogo{
     position: absolute;
-    background-image: url('images/avellar-logo.jpg');
+    background-image: url('images/avellar-logo-ol.svg');
     background-size: cover;
     background-repeat: no-repeat;
+    background-color: #fff;
     width: 134px;
     height: 144px;
     top: 10px;
@@ -146,13 +164,13 @@ h4 {
   left: 10px;
   width: 80px;
   height: 400px;
-  padding: 140px 22px 15px;
+  padding: 200px 22px 15px;
   background-color: $blue;
   opacity: 0.85;
   z-index: 1500;
   color: #ffffff;
   font-size: 20px; 
-  transition: all 0.35s ease-out;  
+  transition: all 0.35s ease-out;
 }
 .siteNumberWrapper.in-view {
   top: 125px;  
@@ -163,6 +181,12 @@ h4 {
   transform-origin: top left;
   width: 200px;
   text-align: left;
+  a {
+    color:#fff;
+  }
+  a:hover{
+    text-decoration: none;
+  } 
 }
 .logoBadge {
   position: fixed;
@@ -179,7 +203,7 @@ h4 {
   top:140px;
 }
 .sm-block{
-  margin-top: 5rem;
+  margin-top: 3rem;
   margin-left: 0.5rem;
 }
 .c-icon {
@@ -199,10 +223,8 @@ h4 {
 .c-link {
     position: relative;
     text-align:center;
-    color: #d1d1d1;
+    color: $lightblue;
 }
-
-
 
 .home-banner{
   position: relative;
@@ -245,9 +267,10 @@ h4 {
 
 .introText{
   border-top: 1px solid #fff;
-  margin-top: 128px;
-  padding-top: 4rem;
-  font-size: 60px;
+  margin-top: 117px;
+  padding-top: 12rem;
+  padding-bottom: 4rem;
+  font-size: 40px;
   line-height: 1.2;
   padding-right: 10rem;
 
@@ -258,12 +281,18 @@ h4 {
 #serviceWrapper{
   padding: 5rem;
   overflow: hidden;
-  transform: translateY(0px);
 }
 .serviceBlock{
   height: 450px;
   overflow:hidden;
   padding: 0px;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all 1s ease-out;
+}
+.serviceBlock.fade-in{
+  opacity:1;
+  transform: translateY(0px);
 }
 .box1, .box2, .box3 {
   overflow:hidden;
@@ -381,10 +410,21 @@ h4 {
 
 /* SERVICE PAGES */
 
+
 .service-nav-container {
-  height: 100px;
-  margin-top: 50px;
+  height: 60px;
+  margin-top: 0px;
+  padding-top: 0.6rem;
+  background-color: $darkgray;
+  opacity: 0.9;
+  transition: all 0.25s ease-out;  
 }
+.service-nav-container.fixed {
+  position: fixed;
+  top: 0rem;
+  z-index: 10;
+}
+
 .serviceNav {
   list-style: none;
   display: flex;
@@ -397,18 +437,22 @@ h4 {
 .nav-link {
   padding:0px;
 }
-
+#service-menu {
+  position:relative;
+  transition: all 0.35s ease-out;
+}
 #service-menu .nav-link {
   position: relative;
   display: block;
   text-align: left;
-  color: $blue;
+  color: #fff;
+  font-size: 1.1rem;
   transition: color 0.5s;
   font-weight: 400;
 }
 
 #service-menu .nav-link:hover{
-  color:#000;
+  color:$blue;
 }
 
 #service-menu .active .nav-link {
@@ -442,14 +486,54 @@ h4 {
   background-color: $lightblue;
   height: auto;
 }
+.service-white {
+  background-color: #fff;
+  height: auto;
+}
 .medical-panel {
-  padding: 4rem 0;
+  padding: 4rem 15px;
+}
+.med-block {
+  margin-top: 3rem;
+}
+.med-block.fixed-menu {
+  transform: translateY(60px);
+}
+.download-wrapper {
+  position: relative;
+  width:200px;
+}
+.download-item {
+  position: relative;
+  height: 45px;  
+}
+.download-link {
+  padding-left: 40px;
+  padding-top: 3px;
+}
+.download-link::before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  background-image: url('images/adobe-pdf-icon.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+
+}
+/* CONTACT PANELS */
+
+.contact-panel{
+  background-color: $lightblue;
+  padding: 5rem 0;
 }
 
 /* BOOKING FORM */
 
 .booking-wrapper {
-  margin-top: 8rem;
+  margin-top: 3rem;
 }
 
 .form-wrapper{
