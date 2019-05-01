@@ -46,16 +46,16 @@
 			<div class="row">
 				<div class="container">
 					<div class="row justify-content-center">
-						<div class="col-md-10">
+						<div class="col-sm-12 col-md-12">
 							<div id="service-menu">
-								<nav class="navbar navbar-expand-lg justify-content-center topNav topNavBar">
+								<nav class="navbar navbar-expand-sm justify-content-center topNav topNavBar">
 									<?php
 							        $args = array(
 						              'theme_location' => 'secondary',
 						              'depth'      => 2,
 						              'container'  => false,
 						              'menu_class'     => 'navbar-nav',
-						              'menu_id' => 'menu-top-menu-home',
+//						              'menu_id' => 'menu-top-menu-home',
 						              'walker'     => new Bootstrap_Walker_Nav_Menu()
 						              );
 						            if (has_nav_menu('primary')) {

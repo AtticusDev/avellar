@@ -20,7 +20,6 @@
 </head>
 
 <body <?php body_class(); ?>>
-
 <div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4">
@@ -48,14 +47,14 @@
 			</div>
 			<a href="/"><div class="siteLogo"></div></a>
 			<div class="logoBadge"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/avellar-badge-ol.svg"></a></div>
-			<div class="siteNumberWrapper">
+			<div class="siteNumberWrapper flex-wrap flex-sm-nowrap">
 				<div class="siteNumber"><a href="tel:020 8656 0400">+44(0) 20 8656 0400</a></div>
 				<div class="sm-block">
 						
 							<a href="https://www.linkedin.com/company/aber-instruments-ltd/" class="c-link" aria-label="Linkedin"><svg class="c-icon"><use xlink:href="#icon--linkedin"></use></svg></a>
-							<br>
+							
 
-							<a href="https://twitter.com/AberInstruments" class="c-link" aria-label="Twitter"><svg class="c-icon"><use xlink:href="#icon--twitter"></use></svg></a><br>
+							<a href="https://twitter.com/AberInstruments" class="c-link" aria-label="Twitter"><svg class="c-icon"><use xlink:href="#icon--twitter"></use></svg></a>
 
 							<a href="https://www.facebook.com/aberinstruments/" class="c-link" aria-label="Facebook"><svg class="c-icon"><use xlink:href="#icon--facebook"></use></svg></a>
 				</div>
