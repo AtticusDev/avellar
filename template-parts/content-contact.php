@@ -24,17 +24,16 @@
 				</div>
 			</div>
 			<div class="container booking-wrapper">
-				<div class="row justify-content-end">
-					<div class="col-md-2 formTitle">
-						<h3 style="margin-bottom: 0px;">Request a booking</h3>
+				<div class="row justify-content-left">
+					<div class="col-md-1">
 					</div>
-					<div class="col-md-10">
+					<div class="col-sm-11 col-md-11">
 						<div class="form-wrapper">
+							<h3 style="margin-bottom: 10px; margin-left: 5px;">Request a booking</h3>
 							<?php
 								echo do_shortcode('[gravityform id=1 name=Contact title=false description=false]');
 							?>
 						</div>
-
 					</div>
 				</div>
 			</div>

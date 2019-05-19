@@ -6450,14 +6450,14 @@ jQuery(document).ready(function($){
 //  .addIndicators()
   .addTo(controller);
 
-  var medBlockScene = new ScrollMagic.Scene({
+/*  var medBlockScene = new ScrollMagic.Scene({
     triggerElement: '.service-wrapper',
     triggerHook: 0
   })
   .setClassToggle('.med-block', 'fixed-menu')
 //  .addIndicators()
   .addTo(controller);
-
+*/
 
 
 

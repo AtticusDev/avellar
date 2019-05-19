@@ -125,6 +125,12 @@ require get_template_directory() . '/inc/post-types/CPT.php';
 //Medical custom post type
 require get_template_directory() . '/inc/post-types/register-medicals.php';
 
+//Specialist Medical custom post type
+require get_template_directory() . '/inc/post-types/register-specmedicals.php';
+
 //Download custom post type
 require get_template_directory() . '/inc/post-types/register-downloads.php';
+
+//Doctors custom post type
+require get_template_directory() . '/inc/post-types/register-doctors.php';
 

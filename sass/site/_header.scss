@@ -82,18 +82,19 @@
 }
 
 .slide-menu a:hover {
-  background: #3c9793;
+  background: $lightblue;
+  color: $blue;
 }
 
 .slide-menu .btn {
   float: right;
   color: #fff;
-  background: #34817e;
+  background: $blue;
   padding: 8px;
 }
 
 .slide-menu .btn:hover {
-  background: #2b6b68;
+  background: $blue;
 }
 
 .slide-menu .btn + .btn {

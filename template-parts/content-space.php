@@ -14,7 +14,7 @@
 		</div>
 		<div class="home-content-wrapper">
 			<div class="row justify-content-end">
-				<div class="col-md-8 col-lg-9 col-xl-10 introText">
+				<div class="col-md-8 col-lg-9 col-xl-10 service-page-title">
 					<div class="trigger-badge">
 					<h1 class="underline text-white"><?php
 						the_title()

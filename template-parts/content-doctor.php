@@ -1,6 +1,6 @@
 <?php
 /**
- * Template part for displaying page content in home.php
+ * Template part for displaying page content in doctor.php
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
@@ -55,31 +55,6 @@
 			</div>
 		</div>
 	</div>
-	<div class="bcg-parallax">
-		<?php $officeImg = get_field('facility_image'); ?>
-		<div class="bcg" style="background-image: url('<?php echo $officeImg; ?>')"></div>
-		<div class="content-wrapper">
-			<div class="caseStudyIntro"><h1>Our facilities</h1></div>
-		</div>
-	</div>
-	<div class="container-fluid team-panel">
-		<div class="row justify-content-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-12">
-						<h4 class="blue"><?php the_field('avellar_title'); ?></h4>
-					</div>
-					<div class="col-md-6">
-						<?php the_field('desc_left'); ?>
-					</div>
-					<div class="col-md-6">
-						<?php the_field('desc_right'); ?>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
 
 
 </article><!-- #post-## -->

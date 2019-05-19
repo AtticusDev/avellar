@@ -13,8 +13,8 @@
 		<div class="container-fluid home-banner homeImg" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 		</div>
 		<div class="home-content-wrapper">
-			<div class="row justify-content-end">
-				<div class="col-md-10 col-lg-9 col-xl-10 introText">
+			<div class="row justify-content-center">
+				<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 col-xl-10 introText">
 					<div class="trigger-badge">
 					<?php
 						the_content();
@@ -23,10 +23,8 @@
 				</div>
 			</div>
 			<div class="container">
-				<div class="row justify-content-left">
-					<div class="col-md-1">
-					</div>
-					<div class="col-sm-11 col-md-11">
+				<div class="row justify-content-center">
+					<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 col-xl-10">
 
 						<div class="form-wrapper">
 							<h3 style="margin-bottom: 10px; margin-left: 5px;">Request a booking</h3>
@@ -42,9 +40,10 @@
 	</div> <!-- end parallax -->
 
 
-	<div class="container-fluid mt-5">
+	<div class="container about-intro">
 		<div class="row justify-content-center">
-			<div class="col-md-8">
+
+			<div class="col-md-10">
 				<?php
 					the_field('introduction');
 				?>
