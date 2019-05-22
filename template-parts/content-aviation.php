@@ -23,17 +23,17 @@
 					</div>
 				</div>
 			</div>
-			<div class="container booking-wrapper">
-				<div class="row justify-content-left">
-					<div class="col-md-1">
-					</div>
-					<div class="col-sm-11 col-md-11">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 col-xl-10">
+
 						<div class="form-wrapper">
 							<h3 style="margin-bottom: 10px; margin-left: 5px;">Request a booking</h3>
 							<?php
 								echo do_shortcode('[gravityform id=1 name=Contact title=false description=false]');
 							?>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -75,10 +75,11 @@
         // set up taxonomies
         $tax_one = 'category';
         $post_type = 'medical';
+        $parent_cat_id = get_cat_ID('aviation');
 
         $categories = get_categories( array(
             'type'                     => $post_type,
-            'child_of'					=> '14',
+            'child_of'					=> $parent_cat_id,
             'orderby'                  => 'name',
             'order'                    => 'DESC',
             'hide_empty'               => 1,

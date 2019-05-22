@@ -10,30 +10,30 @@
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="homeImg-parallax">
-		<div class="container-fluid home-banner homeImg" style="background-image: url('<?php the_post_thumbnail_url(); ?>'); background-size: cover;">
+		<div class="container-fluid home-banner homeImg" style="background-image: url('<?php the_post_thumbnail_url(); ?>');">
 		</div>
 		<div class="home-content-wrapper">
 			<div class="row justify-content-end">
-				<div class="col-md-8 col-lg-9 col-xl-10 introText">
+				<div class="col-md-8 col-lg-9 col-xl-10 service-page-title">
 					<div class="trigger-badge">
-					<h1 class="underline"><?php
+					<h1 class="underline text-white"><?php
 						the_title()
 					?>
 					</h1>
 					</div>
 				</div>
 			</div>
-			<div class="container booking-wrapper">
-				<div class="row justify-content-left">
-					<div class="col-md-1">
-					</div>
-					<div class="col-sm-11 col-md-11">
+			<div class="container">
+				<div class="row justify-content-center">
+					<div class="col-xs-12 col-sm-12 col-md-11 col-lg-10 col-xl-10">
+
 						<div class="form-wrapper">
 							<h3 style="margin-bottom: 10px; margin-left: 5px;">Request a booking</h3>
 							<?php
 								echo do_shortcode('[gravityform id=1 name=Contact title=false description=false]');
 							?>
 						</div>
+
 					</div>
 				</div>
 			</div>
@@ -45,17 +45,12 @@
 				<div class="row justify-content-center">
 					<div class="col-md-4">
 						<h2>Contact details</h2>
-						<p>Avellar Medical
-							Stockley Park,<br />
-							4 Roundwood Ave, <br />
-							Hayes, <br />
-							Uxbridge UB11 1BQ</p>
-						<p>Tel: 01288 876 543</p>
+						<?php the_field('address'); ?>
+						<a href="https://goo.gl/maps/fUv8Sv1qTro" class="btn book-button">Get directions</a>
 					</div>
 					<div class="col-md-4">
 						<h2>How to find us</h2>
-						<p>Stockley Park has excellent air, road and rail connections. <br />Click on the button below to help plan your journey.</p>
-						<a href="https://goo.gl/maps/fUv8Sv1qTro" class="btn book-button">Get directions</a>
+						<?php the_field('directions'); ?>
 
 					</div>
 				</div>

@@ -64,18 +64,12 @@
 	</div>
 	<div class="container-fluid team-panel">
 		<div class="row justify-content-center">
-			<div class="container">
-				<div class="row">
-					<div class="col-sm-12 col-md-12">
-						<h4 class="blue"><?php the_field('avellar_title'); ?></h4>
-					</div>
-					<div class="col-md-6">
-						<?php the_field('desc_left'); ?>
-					</div>
-					<div class="col-md-6">
-						<?php the_field('desc_right'); ?>
-					</div>
-				</div>
+			<div class="col-sm-10 col-md-8 col-lg-6 col-xl-6">
+				<h1 class="underlineB">
+					Our facilities
+				</h1>
+					<h4><?php the_field('avellar_title'); ?></h4>
+					<?php the_field('facility_description'); ?>
 			</div>
 		</div>
 	</div>
