@@ -12,6 +12,16 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-141018483-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-141018483-1');
+</script>
+
 <meta charset="<?php bloginfo( 'charset' ); ?>">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -46,17 +56,17 @@
 					</nav>
 			</div>
 			<a href="/"><div class="siteLogo"></div></a>
-			<div class="logoBadge"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/avellar-badge-ol.svg"></a></div>
+			<div class="logoBadge"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/avellar-badge-ol.svg" alt="avellar medical logo"></a></div>
 			<div class="siteNumberWrapper flex-wrap flex-sm-nowrap">
-				<div class="siteNumber"><a href="tel:020 8656 0400">+44(0) 20 8656 0400</a></div>
+				<div class="siteNumber"><a href="tel:07760265436">07760 265 436</a></div>
 				<div class="sm-block">
 						
-							<a href="https://www.linkedin.com/company/aber-instruments-ltd/" class="c-link" aria-label="Linkedin"><svg class="c-icon"><use xlink:href="#icon--linkedin"></use></svg></a>
+							<a href="https://www.linkedin.com/company/avellar-medical/" class="c-link" aria-label="Linkedin" target="_blank"><svg class="c-icon"><use xlink:href="#icon--linkedin"></use></svg></a>
 							
 
-							<a href="https://twitter.com/AberInstruments" class="c-link" aria-label="Twitter"><svg class="c-icon"><use xlink:href="#icon--twitter"></use></svg></a>
-
-							<a href="https://www.facebook.com/aberinstruments/" class="c-link" aria-label="Facebook"><svg class="c-icon"><use xlink:href="#icon--facebook"></use></svg></a>
+<!--							<a href="https://twitter.com/AvellarMedical" class="c-link" aria-label="Twitter"><svg class="c-icon"><use xlink:href="#icon--twitter"></use></svg></a>
+-->
+							<a href="https://www.facebook.com/Avellar-Medical-1331484310366246/" class="c-link" aria-label="Facebook" target="_blank"><svg class="c-icon"><use xlink:href="#icon--facebook"></use></svg></a>
 				</div>
 			</div>
 

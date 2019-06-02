@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Specialist
+ * Template Name: General
 
  * The template for displaying all pages
  *
@@ -21,7 +21,7 @@ get_header(); ?>
 					<?php
 					while ( have_posts() ) : the_post();
 
-						get_template_part( 'template-parts/content', 'specialist' );
+						get_template_part( 'template-parts/content', 'general' );
 
 
 					endwhile; // End of the loop.

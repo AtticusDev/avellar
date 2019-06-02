@@ -11,9 +11,8 @@
 
 ?>
 
-	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
+	<footer id="colophon" class="site-footer">
 
 		<div class="container-fluid">
 			<div class="row justify-content-center">
@@ -25,19 +24,18 @@
 			<div class="row justify-content-center">
 				<div class="col-sm-12 col-md-4">		
 					<div class="site-info">
-						<p>The Bower Building<br />
-						Stockley Park, 4 Roundwood Ave,<br />
-						Hayes, Uxbridge UB11 1BQ</p>
-						<p><a href="mailto:bookings@avellarmedical.com">bookings@avellarmedical.com</a>
-						<p>&copy; <?php bloginfo( 'name' );
-								echo ' - ';
-								echo date("Y"); ?></p>
+						<p><?php the_field('contact_info', 'option'); ?></p>
+						<p><a href="/privacy-policy/">Privacy policy</a></p>
+
+						<p>&copy; <?php bloginfo( 'name' );								
+							echo ' - ';
+							echo date("Y"); ?>
+						</p>
 					</div><!-- .site-info -->
 				</div>
 			</div>
 		</div><!--  .container -->
 	</footer><!-- #colophon -->
-</div><!-- #page -->
 
 <?php wp_footer(); ?>
 

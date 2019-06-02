@@ -30,13 +30,6 @@
 			<div class="container medical-panel">
 				<div class="row justify-content-center">
 					<div class="col-md-10">
-						<div class="d-flex justify-content-between">
-							<h3>Astronauts</h3>
-						</div>
-					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-md-10">
 						<?php the_field('astronauts'); ?>
 					</div>
 				</div>
@@ -47,14 +40,10 @@
 		<div class="row">
 			<div class="container medical-panel">
 				<div class="row justify-content-center">
-					<div class="col-md-10">
-						<div class="d-flex justify-content-between">
-							<h3>Space tourists</h3>
-						</div>
+					<div class="col-md-4">
+						<img src="<?php the_field('profile_image'); ?>" alt="Nicole Stott - NASA astronaut">
 					</div>
-				</div>
-				<div class="row justify-content-center">
-					<div class="col-md-10">
+					<div class="col-md-6">
 						<?php the_field('space_tourism'); ?>
 					</div>
 				</div>
