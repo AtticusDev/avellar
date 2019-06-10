@@ -43,16 +43,10 @@
 					<div class="col-md-4">
 						<img src="<?php the_field('profile_image'); ?>" alt="Nicole Stott - NASA astronaut">
 					</div>
-					<div class="col-md-6">
+					<div class="col-md-6 space-quote">
 						<?php the_field('space_tourism'); ?>
 					</div>
 				</div>
-			</div>
-		</div>
-	</div>
-	<div class="container-fluid" style="margin-top: 5rem; height: 100px;">
-		<div class="row">
-			<div class="container">
 			</div>
 		</div>
 	</div>

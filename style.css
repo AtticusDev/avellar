@@ -7068,6 +7068,9 @@ h1 {
 h2 {
   font-size: 1.9rem; }
 
+h2.blue {
+  color: #6d8fa7; }
+
 h3 {
   font-size: 1.3rem; }
 
@@ -7784,7 +7787,9 @@ h4 {
 */
   .contact-panel {
     background-color: #f4f7fa;
-    padding: 5rem 1rem; } }
+    padding: 5rem 1rem; }
+  .space-quote {
+    margin-top: 1.5rem; } }
 
 /*--------------------------------------------------------------
 ## Widgets

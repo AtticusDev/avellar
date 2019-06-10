@@ -97,7 +97,7 @@
 							<div class="container">
 								<div class="row justify-content-center">
 									<div class="col-md-10">
-										<?php echo '<h3>'.$category->name.'</h3>'; ?>
+										<?php echo '<h2 class="blue">'.$category->name.'</h2>'; ?>
 									</div>
 								</div>
 							</div>
@@ -139,11 +139,11 @@
 											<p><?php the_field('costs'); ?></p>
 										</div>
 										<div class="download-wrapper">
-											<h4>Downloads</h4>
 
 											<?php 
 											$posts = get_field('downloads');
 											if( $posts ): ?>
+											<h4>Downloads</h4>											
 										    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
 									        <?php setup_postdata($post);
 									        ?>

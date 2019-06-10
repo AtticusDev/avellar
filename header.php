@@ -58,7 +58,11 @@
 			<a href="/"><div class="siteLogo"></div></a>
 			<div class="logoBadge"><a href="/"><img src="<?php bloginfo('stylesheet_directory'); ?>/images/avellar-badge-ol.svg" alt="avellar medical logo"></a></div>
 			<div class="siteNumberWrapper flex-wrap flex-sm-nowrap">
-				<div class="siteNumber"><a href="tel:07760265436">07760 265 436</a></div>
+				<?php
+				$number = get_field('tel_number', 'option'); 
+				$stripped = str_replace(' ', '', $number);
+				?>
+				<div class="siteNumber"><a href="tel:<?php echo $stripped; ?>"><?php the_field('tel_number', 'option'); ?></a></div>
 				<div class="sm-block">
 						
 							<a href="https://www.linkedin.com/company/avellar-medical/" class="c-link" aria-label="Linkedin" target="_blank"><svg class="c-icon"><use xlink:href="#icon--linkedin"></use></svg></a>
