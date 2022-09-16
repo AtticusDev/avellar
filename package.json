@@ -5,7 +5,7 @@
   "main": "",
   "author": "Brad Williams",
   "devDependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.23.5",
     "critical": "^0.8.4",
     "gulp": "^3.9.1",
